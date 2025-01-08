@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DriverFactory {
 	
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+  //  private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
    
     
     public static WebDriver initializeDriver(String browser) {
@@ -33,20 +33,20 @@ public class DriverFactory {
     		}
     	  
     	driver.manage().window().maximize();
-    	DriverFactory.driver.set(driver);
+    	//DriverFactory.driver.set(driver);
     	 
     	return driver;
     }
 	 
-      public static WebDriver getDriver() {
-    
-    	  return driver.get();
-    	  
-      }
-      
-      public static void closeDriver() {
-    	  
-    	   driver.get().quit();
-      }
+//      public static WebDriver getDriver() {
+//    
+//    	  return driver.get();
+//    	  
+//      }
+//      
+//      public static void closeDriver() {
+//    	  
+//    	   driver.get().quit();
+//      }
 
 }

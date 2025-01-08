@@ -2,7 +2,9 @@ package constants;
 
 public enum EndPoint {
 	
-	STORE("/store");
+	STORE("/store"),
+	ADD_TO_CART("/?wc-ajax=add_to_cart"),
+	CHECKOUT("/checkout");
 	
 	public final String url;
 

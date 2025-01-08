@@ -1,6 +1,6 @@
- Feature: Place an order
+Feature: Place an order
 
- Scenario: using default payment option
+  Scenario: using default payment option
     Given I'm a guest customer
     And I have a product in the cart
     And I'm on the checkout page
